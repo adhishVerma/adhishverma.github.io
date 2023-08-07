@@ -138,5 +138,5 @@ gsap.to("#scroll-down", {
   delay: 3.7,
   duration: 1.2,
   fontSize: "0.5em",
-  y : "11em"
+  y : "14em"
 });
