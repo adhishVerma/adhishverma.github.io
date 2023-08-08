@@ -3,17 +3,19 @@
   scroll-behavior: smooth;
 }
 
+/* * {
+    outline: 1px solid #f00 !important;
+  } */
+
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    overflow-x: hidden;
 }
 
 *:-webkit-scrollbar {
   display: none;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 a {
@@ -28,22 +30,24 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  height: 120vh;
+  overflow: hidden;
+  z-index: -2;
 }
 
 .site-container {
   position: relative;
   max-width: 1440px;
-  width: 100%;
+  width: 100vw;
   margin: auto;
+  /* overflow-x: hidden; */
 }
 
 #site-header {
   position: fixed;
+  overflow: hidden;
   height: 52px;
-  width: 100%;
-  margin: auto;
-  padding: 0 0 25px 0;
+  width: 100vw;
   color: #f9f9f9;
   top: 0;
   left: 0;
@@ -63,20 +67,25 @@ a {
 
 .navbar-container {
   display: flex;
-  padding: 1rem 1.5rem;
+  padding: 1em 2em;
   justify-content: space-between;
+  /* width: 100vw; */
+  max-width: 1440px;
+  margin: auto;
 }
 
 #nav-menu {
   font-size: 1.5em;
   display: flex;
-  gap: 1rem;
-  font-weight: 700;
+  gap: 1em;
+  font-weight: 600;
 }
 
 .section-container {
+  position: relative;
   min-height: 100vh;
   width: 100%;
+  overflow-x: hidden;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -94,9 +103,9 @@ a {
   padding: 3rem;
 }
 
-.saluteText{
-    top: 0;
-    left: -100vw;
+.saluteText {
+  top: 0;
+  left: -100vw;
 }
 
 .saluteText > span {
@@ -121,6 +130,7 @@ a {
   color: #f9f9f9;
   position: relative;
   padding: 3rem;
+  overflow-x: hidden;
 }
 
 .sub-category {
@@ -265,7 +275,6 @@ a {
   border-color: transparent;
 }
 
-
 .tab-pane {
   display: none;
 }
@@ -295,32 +304,84 @@ a {
   position: relative;
 }
 
-.img-container{
-    overflow: hidden;
-    width: 100%;
+.img-container {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 0.1em;
+}
+
+.job-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-title span em {
+  font-size: 0.8em;
+}
+
+.job-desc {
+  padding: 1em;
+  font-size: 0.8em;
+}
+
+.section-container #scroll-down {
+  position: absolute;
+  bottom: 4em;
+  left: 50%;
+  translate: -50%;
+  color: white;
+  font-size: 1.3em;
+  display: none;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+
+}
+
+#blob{
+    background-color: white;
+    height: 300px;
     aspect-ratio: 1;
-    border-radius: 0.1em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(127, 255, 212, 0.534), mediumslateblue);
+    animation: rotate 20s infinite;
 }
 
-.job-title{
-    display: flex;
-    justify-content: space-between;
+#blur{
+    top : 0;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    position: fixed;
+    backdrop-filter: blur(1rem);
+    z-index: 0;
 }
 
-.job-title span em{
-    font-size: 0.8em;
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+    50%{
+        scale: 1 1.14;
+    }
+    to{
+        rotate: 360deg;
+    }
 }
-
-.job-desc{
-    padding: 1em;
-    font-size: 0.8em;
-}
-
 
 @media only screen and (max-width: 600px) {
   #nav-menu {
     font-size: 1em;
-    gap: 1.4em;
+    gap: 1;
   }
 
   .logo {
@@ -347,20 +408,33 @@ a {
     position: relative;
   }
 
-  .sub-category{
+  .sub-category {
     font-size: 8em;
     left: 0;
-
   }
-  
-  .tab-container{
+
+  .nav-tab li a {
+    font-size: 0.8rem;
+  }
+
+  .tab-container {
     font-size: 1rem;
   }
 
-  #projects{
+  #projects {
     justify-content: center;
   }
 
+  .section-container #scroll-down{
+    font-size: 0.8em;
+    bottom: 10em;
+  }
+
+  #blob{
+    display: none;
+  }
+
+  #blur{
+    display: none;
+  }
 }
-
-

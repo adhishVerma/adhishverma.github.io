@@ -1,3 +1,17 @@
+const blob = document.getElementById("blob");
+
+document.body.onpointermove = (event) => {
+  const { clientX, clientY } = event;
+
+  blob.animate(
+    {
+      left: `${clientX}px`,
+      top: `${clientY}px`,
+    },
+    { duration: 2000, fill: "forwards" }
+  );
+};
+
 // nav-bar
 (function () {
   var doc = document.documentElement;
@@ -113,30 +127,30 @@ contactLink.addEventListener("mouseover", (event) => {
   }, 30);
 });
 
-gsap.from("#hello", {
-  x: "-100vw",
-  duration: 1.3,
-  scale : 0
+const timeline = gsap.timeline();
+
+timeline.from("#nav-menu span", {
+  y: "-52px",
+  duration: 0.4,
+  stagger: 0.2,
 });
 
+timeline.from("#hello", {
+  x: "-100vw",
+  duration: 1.1,
+  scale: 0,
+});
 
-gsap.from(".jobTitle", {
+timeline.from(".jobTitle", {
   x: "100vw",
-  scale : 0,
-  duration: 1.3,
+  scale: 0,
+  duration: 1.1,
 });
 
-
-gsap.from("#scroll-down", {
-  x: "-100vw",
-  duration: 2,
-});
-
-
-
-gsap.to("#scroll-down", {
-  delay: 3.7,
+timeline.to("#scroll-down", {
+  display: "block",
+  y: 30,
+  yoyo: true,
+  repeat: -1,
   duration: 1.2,
-  fontSize: "0.5em",
-  y : "14em"
 });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="static/icons/H.svg" type="image/svg+xml">
+    <link rel="icon" href="static/icons/H.svg" type="image/svg+xml" />
     <title>Helix</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,6 +20,9 @@
   </head>
   <body>
     <div class="site-bg"></div>
+    <div id="container">
+    <div id="blob"></div>
+    <div id="blur"></div></div>
     <div class="site-container">
       <nav class="" id="site-header">
         <div class="navbar-container">
@@ -33,16 +36,20 @@
         </div>
       </nav>
       <!-- INTRODUCTION -->
-      <div class="section-container">
+      <div class="section-container" id="intro">
         <div class="saluteTextContainer gradient">
           <div class="section-name"><span>a</span>start.</div>
-          <p class="saluteText" id="hello">Hi, my name is <span id="nickname">Helix</span></p>
+          <p class="saluteText" id="hello">
+            Hi, my name is <span id="nickname">Helix</span>
+          </p>
           <p class="saluteText jobTitle">I'm a fullstack developer</p>
-          <p id="scroll-down">Scroll down to see my work</p>
           <a href="#contact"
             ><div id="contact-link" data-value="contact me">Contact Me</div></a
           >
         </div>
+        <p id="scroll-down">
+          Scroll down <i class="fa-solid fa-arrow-down"></i>
+        </p>
       </div>
       <!-- PROJECTS -->
       <div id="projects" class="section-container">
@@ -69,24 +76,96 @@
             <div class="tab-pane" id="skills">
               <div class="tab-container">
                 <div class="skills-list">
-                    <img src = "static/icons/python.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/mongodb.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/express.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/react.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/node.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/tailwind.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/next.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/router.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/mui.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/firebase.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/js.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/ts.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/socketio.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/graphql.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/fastapi.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/c++.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/html.svg" alt="skill-icon" class="skill"/>
-                    <img src = "static/icons/css.svg" alt="skill-icon" class="skill"/>
+                  <img
+                    src="static/icons/python.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/mongodb.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/express.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/react.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/node.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/tailwind.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/next.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/router.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/mui.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/firebase.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/js.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/ts.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/socketio.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/graphql.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/fastapi.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/c++.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/html.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
+                  <img
+                    src="static/icons/css.svg"
+                    alt="skill-icon"
+                    class="skill"
+                  />
                 </div>
               </div>
             </div>
@@ -126,8 +205,8 @@
                   </ul>
                 </div>
                 <div class="job-title">
-                    <span>
-                  Web Developer, <em>CrowdBook.in</em></span><em> Feb 2021 - Feb 2022</em>
+                  <span> Web Developer, <em>CrowdBook.in</em></span
+                  ><em> Feb 2021 - Feb 2022</em>
                 </div>
                 <div class="job-desc">
                   <ul>
@@ -154,7 +233,12 @@
         </div>
       </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script type="text/javascript" src="./app.js" defer></script>
   </body>
 </html>
