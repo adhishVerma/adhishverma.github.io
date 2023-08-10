@@ -131,8 +131,8 @@ const timeline = gsap.timeline();
 
 timeline.from("#nav-menu span", {
   y: "-52px",
-  duration: 0.4,
-  stagger: 0.2,
+  duration: 0.5,
+  stagger: 0.4,
 });
 
 timeline.from("#hello", {

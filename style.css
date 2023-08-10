@@ -54,12 +54,6 @@ a {
   z-index: 9999;
   transition: all 0.6s ease;
   box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
-  background: rgb(25, 4, 64);
-  background: linear-gradient(
-    180deg,
-    rgba(25, 4, 64, 1) 0%,
-    rgba(43, 2, 38, 0.4374124649859944) 100%
-  );
 }
 #site-header.hide {
   top: -53px;
@@ -131,14 +125,16 @@ a {
   position: relative;
   padding: 3rem;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .sub-category {
   color: #221d35;
   letter-spacing: 1.99px;
-  font-size: 18rem;
+  font-size: 14em;
   position: absolute;
   right: 45%;
+  top: 20%;
   z-index: -1;
 }
 
@@ -156,10 +152,15 @@ a {
 
 #project-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 6rem;
   padding: 3rem 0;
 }
+
+.project-info{
+  margin-top: 1em;
+}
+
 
 @keyframes pulse {
   from,
@@ -173,8 +174,8 @@ a {
 }
 
 .card {
-  width: 232px;
-  aspect-ratio: 1;
+  /* width: 10em; */
+  /* aspect-ratio: 1; */
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -204,6 +205,7 @@ a {
   padding-top: 4rem;
   font-family: "Space Mono", monospace;
   text-transform: uppercase;
+  font-size: 0.77em;
 }
 
 .project-link:hover {
@@ -362,7 +364,7 @@ a {
     right : 0;
     bottom : 0;
     position: fixed;
-    backdrop-filter: blur(1rem);
+    backdrop-filter: blur(200px);
     z-index: 0;
 }
 
@@ -398,19 +400,25 @@ a {
 
   .projectscontainer {
     font-size: 1.33em;
+    padding: 0 1em;
+  }
+
+  #projects .section-container{
+    padding: 0;
   }
 
   #project-grid {
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(1, 1fr);
-    gap: 1em;
+    gap: 4em;
     position: relative;
   }
 
   .sub-category {
     font-size: 8em;
     left: 0;
+    top: 3em;
   }
 
   .nav-tab li a {
@@ -437,4 +445,10 @@ a {
   #blur{
     display: none;
   }
+}
+
+.skill{
+  width: 5em;
+  aspect-ratio: 21/9;
+  margin: 0.1em;
 }
