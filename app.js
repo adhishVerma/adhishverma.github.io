@@ -67,7 +67,7 @@ fetch("./static/data.json")
   .then((res) => res.json())
   .then((data) => {
     data.forEach((project, i) => {
-      let card = `<div class="card">
+      let card = `<div class="col-md-6 col-xxl-4 my-3">
                 <div class="img-container">
                 <img src="${project.img}" alt="" loading="lazy"/></div>
                 <div class="project-info">
@@ -129,7 +129,7 @@ contactLink.addEventListener("mouseover", (event) => {
 
 const timeline = gsap.timeline();
 
-timeline.from("#nav-menu span", {
+timeline.from("#nav-menu input", {
   y: "-52px",
   duration: 0.5,
   stagger: 0.4,
