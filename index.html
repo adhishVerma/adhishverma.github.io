@@ -1,244 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="static/icons/H.svg" type="image/svg+xml" />
-    <title>Helix</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/5e90d443bd.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <div class="site-bg"></div>
-    <div id="container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="static/icons/H.svg" type="image/svg+xml" />
+  <title>Helix</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css"
+    integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@700&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/5e90d443bd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="site-bg"></div>
+  <div id="blob-container">
     <div id="blob"></div>
-    <div id="blur"></div></div>
-    <div class="site-container">
-      <nav class="" id="site-header">
-        <div class="navbar-container">
-          <div class="logo"><a href="/">Helix.dev</a></div>
-          <div id="nav-menu">
-            <span><a href="#intro">start.</a></span>
-            <span><a href="#projects">work.</a></span>
-            <span><a href="#about">about.</a></span>
-            <span><i class="fa-brands fa-github"></i></span>
-          </div>
+    <div id="blur"></div>
+  </div>
+  <div id="social-icons">
+    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+    <div class="icon"><i class="fa-brands fa-discord"></i></div>
+    <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+  </div>
+  <div class="container-fluid d-flex flex-column align-items-center">
+    <nav class="" id="site-header">
+      <div class="navbar-container container">
+        <div class="logo"><a href="/">Helix.dev</a></div>
+        <div id="nav-menu">
+          <input type="button" onclick="document.getElementById('intro').scrollIntoView()" value="start." />
+
+          <input type="button" onclick="document.getElementById('projects').scrollIntoView()" value="work." />
+
+          <input type="button" onclick="document.getElementById('about').scrollIntoView()" value="about." />
+          <span><a href="https://github.com/adhishVerma/" target="blank_"><i class="fa-brands fa-github"></i></a></span>
         </div>
-      </nav>
-      <!-- INTRODUCTION -->
-      <div class="section-container" id="intro">
-        <div class="saluteTextContainer gradient">
-          <div class="section-name"><span>a</span>start.</div>
-          <p class="saluteText" id="hello">
-            Hi, my name is <span id="nickname">Helix</span>
-          </p>
-          <p class="saluteText jobTitle">I'm a fullstack developer</p>
-          <a href="#contact"
-            ><div id="contact-link" data-value="contact me">Contact Me</div></a
-          >
-        </div>
-        <p id="scroll-down">
-          Scroll down <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </nav>
+    <!-- INTRODUCTION -->
+    <div class="section-container container d-flex align-items-center" id="intro">
+      <div class="saluteTextContainer gradient">
+        <div class="section-name"><span>a</span>start.</div>
+        <p class="saluteText" id="hello">
+          Hi, my name is <span id="nickname">Helix</span>
         </p>
+        <p class="saluteText jobTitle">I'm a fullstack developer</p>
+        <p class="salute-desc">I'm a full-stack developer specializing in building(and ocassionally designing)
+          exceptional digital experiences. Currently, I'm focused on building responsive full-stack web applications.
+        </p>
+        <a href="#contact">
+          <div id="contact-link" data-value="Hire Me">Hire Me</div>
+        </a>
       </div>
-      <!-- PROJECTS -->
-      <div id="projects" class="section-container">
-        <div class="projectscontainer gradient">
-          <div class="section-name"><span>a</span>work.</div>
-          Here are some of my work
-          <div class="sub-category">Web</div>
-          <!-- Project grid -->
-          <div class="project-grid" id="project-grid"></div>
-        </div>
+      <p id="scroll-down">
+        Scroll down <i class="fa-solid fa-arrow-down"></i>
+      </p>
+    </div>
+    <!-- PROJECTS -->
+    <div id="projects" class="container">
+      <div class="projectscontainer">
+        <div class="section-name"><span>a</span>work.</div>
+        <div class="mb-5">Here are some of my projects</div>
+        <div class="sub-category">Web</div>
+        <!-- Project grid -->
+        <div class="project-grid container mx-auto row gx-4" id="project-grid"></div>
       </div>
-      <!-- ABOUT -->
-      <div id="about" class="section-container">
-        <div class="about-container gradient">
-          <div class="section-name"><span>a</span>about.</div>
-          <!-- tabs -->
-          <ul id="nav-tab" class="nav-tab">
-            <li><a href="#skills">Skills</a></li>
-            <li class="active"><a href="#profile">Profile</a></li>
-            <li><a href="#work-history">Work history</a></li>
-          </ul>
-          <!-- tab panes -->
-          <div class="tab-content">
-            <div class="tab-pane" id="skills">
-              <div class="tab-container">
-                <div class="skills-list">
-                  <img
-                    src="static/icons/python.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/mongodb.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/express.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/react.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/node.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/tailwind.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/next.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/router.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/mui.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/firebase.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/js.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/ts.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/socketio.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/graphql.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/fastapi.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/c++.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/html.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                  <img
-                    src="static/icons/css.svg"
-                    alt="skill-icon"
-                    class="skill"
-                  />
-                </div>
+    </div>
+    <!-- ABOUT -->
+    <div id="about" class="section-container container d-flex align-items-center">
+      <div class="about-container gradient">
+        <div class="section-name"><span>a</span>about.</div>
+        <!-- tabs -->
+        <ul id="nav-tab" class="nav-tab">
+          <li class="active"><a href="#skills">Skills</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#work-history">Work history</a></li>
+        </ul>
+        <!-- tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="skills">
+            <div class="tab-container">
+              <div class="skills-list">
+                <p class="skills-desc">These are the technologies I've worked with</p>
+                <img src="static/icons/python.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/mongodb.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/express.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/react.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/node.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/tailwind.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/next.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/router.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/mui.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/firebase.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/js.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/ts.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/socketio.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/graphql.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/fastapi.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/c++.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/html.svg" alt="skill-icon" class="skill" />
+                <img src="static/icons/css.svg" alt="skill-icon" class="skill" />
               </div>
             </div>
-            <div class="tab-pane active" id="profile">
-              <div class="tab-container">
-                Hi! I'm Adhish Kumar Verma, a self-taught, full-stack developer
-                with a deep-dive focus on the MERN stack. I thrive on
-                transforming intricate lines of code into powerful, functional
-                applications. My technical skills, coupled with an innate
-                curiosity, enable me to build robust and scalable applications
-                that provide seamless user experiences. Staying updated with the
-                latest trends and technologies in the field, I approach every
-                new project as an opportunity to expand my knowledge and
-                capabilities. My journey as a developer has been incredibly
-                enriching and I'm always eager to explore new paths in the tech
-                world. Thank you for stopping by. Feel free to connect for
-                collaborations or discussions on potential opportunities.
-              </div>
+          </div>
+          <div class="tab-pane" id="profile">
+            <div class="tab-container">
+              <div class="readable mb-4">From when I was young, I've always been curious about technology. I remember
+                playing around with HTML and really enjoying it. Then, I came across Python, and it was like a light
+                bulb went off. I found so much joy in programming and realized that I loved solving problems through
+                code. This made me feel that programming was the perfect fit for me.</div>
+              <div class="readable">As I explored more, I tried out many programming languages, but I always found
+                myself
+                coming back to JavaScript and Python. This affinity for web development naturally steered me towards
+                becoming a full-stack developer. However, my quest for knowledge doesn't end there. The tech landscape
+                is ever-evolving, and I find myself continuously immersed in learning, eager to keep up with the latest
+                trends and innovations in the industry.</div>
             </div>
-            <div class="tab-pane" id="work-history">
-              <div class="tab-container">
-                <div class="job-title">
-                  Independent Consultant<em> Aug 2022 - Present</em>
-                </div>
-                <div class="job-desc">
-                  <ul>
-                    <li>
-                      Crafting captivating websites and dynamic E-commerce
-                      stores
-                    </li>
-                    <li>
-                      Determining coding requirements for clients, including
-                      seamless e-commerce capability, extensive product
-                      catalogues, efﬁcient shopping carts, and secure payment
-                      gateways.
-                    </li>
-                  </ul>
-                </div>
-                <div class="job-title">
-                  <span> Web Developer, <em>CrowdBook.in</em></span
-                  ><em> Feb 2021 - Feb 2022</em>
-                </div>
-                <div class="job-desc">
-                  <ul>
-                    <li>
-                      Collaborated with content creators to develop SEO-friendly
-                      content, employing keyword-rich titles, compelling meta
-                      descriptions, and image alt tags.
-                    </li>
-                    <li>
-                      Revamped website architecture and content strategy,
-                      driving a remarkable 30% increase in organic trafﬁc and
-                      reducing the bounce rate by 10% within just 6 months.
-                    </li>
-                    <li>
-                      Achieved a remarkable search ranking of number 2 across
-                      niche keywords, amplifying the website's visibility and
-                      reach.
-                    </li>
-                  </ul>
-                </div>
+          </div>
+          <div class="tab-pane" id="work-history">
+            <div class="tab-container">
+              <div class="job-title">
+                Independent Consultant<em> Aug 2022 - Present</em>
+              </div>
+              <div class="job-desc">
+                <ul>
+                  <li>
+                    Crafting captivating websites and dynamic E-commerce
+                    stores
+                  </li>
+                  <li>
+                    Determining coding requirements for clients, including
+                    seamless e-commerce capability, extensive product
+                    catalogues, efﬁcient shopping carts, and secure payment
+                    gateways.
+                  </li>
+                </ul>
+              </div>
+              <div class="job-title">
+                <span> Web Developer, <em>CrowdBook.in</em></span><em> Feb 2021 - Feb 2022</em>
+              </div>
+              <div class="job-desc">
+                <ul>
+                  <li>
+                    Collaborated with content creators to develop SEO-friendly
+                    content, employing keyword-rich titles, compelling meta
+                    descriptions, and image alt tags.
+                  </li>
+                  <li>
+                    Revamped website architecture and content strategy,
+                    driving a remarkable 30% increase in organic trafﬁc and
+                    reducing the bounce rate by 10% within just 6 months.
+                  </li>
+                  <li>
+                    Achieved a remarkable search ranking of number 2 across
+                    niche keywords, amplifying the website's visibility and
+                    reach.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="text/javascript" src="./app.js" defer></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="./app.js" defer></script>
+</body>
+
 </html>
