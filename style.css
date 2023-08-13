@@ -51,6 +51,7 @@ a {
   right: 0;
   z-index: 9999;
   transition: all 0.6s ease;
+  background: #1a152786;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 #site-header.hide {
@@ -372,7 +373,7 @@ a {
     right : 0;
     bottom : 0;
     position: fixed;
-    backdrop-filter: blur(200px);
+    backdrop-filter: blur(300px);
     z-index: 0;
 }
 
@@ -401,6 +402,30 @@ a {
   font-size: 0.8em;
   margin-top: 2em;
   margin-bottom: 2em;
+}
+
+#social-icons{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+  overflow: hidden;
+}
+
+.icon{
+  padding: 1em;
+  background-color: #b38efc;
+  font-size: 1.33em;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.icon:nth-child(2){
+  border-top: 1px solid rgba(0, 0, 0, 0.276);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.276);
 }
 
 @media only screen and (max-width: 600px) {
