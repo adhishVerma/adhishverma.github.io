@@ -8,7 +8,7 @@ document.body.onpointermove = (event) => {
       left: `${clientX}px`,
       top: `${clientY}px`,
     },
-    { duration: 2000, fill: "forwards" }
+    { duration: 200, fill: "forwards" }
   );
 };
 
@@ -87,9 +87,8 @@ const onTabClick = (event) => {
   activeTabs.forEach((activeTab) => {
     activeTab.classList.remove("active");
   });
-
   event.target.parentElement.className += " active";
-  document.getElementById(event.target.href.split("#")[1]).classList +=
+  document.getElementById(event.target.dataset["tab"]).classList +=
     " active";
 };
 
@@ -127,6 +126,15 @@ contactLink.addEventListener("mouseover", (event) => {
   }, 30);
 });
 
+
+gsap.from("#social-icons",{
+  opacity : 0,
+  scrollTrigger : {
+    scrub : 1
+  }
+})
+
+
 const timeline = gsap.timeline();
 
 timeline.from("#nav-menu input", {
@@ -134,6 +142,7 @@ timeline.from("#nav-menu input", {
   duration: 0.5,
   stagger: 0.4,
 });
+
 
 timeline.from("#hello", {
   x: -50,
@@ -147,10 +156,22 @@ timeline.from(".jobTitle", {
   duration: 0.6,
 });
 
+timeline.from(".salute-desc", {
+  opacity : 0,
+  duration : 0.6
+})
+
+timeline.from(".hire-button", {
+  opacity : 0
+})
+
+timeline.from('#scroll-down', {
+  opacity : 0
+})
+
 timeline.to("#scroll-down", {
-  display: "block",
-  y: 30,
+  y: 20,
   yoyo: true,
   repeat: -1,
-  duration: 1.2,
+  duration: 1.3,
 });
