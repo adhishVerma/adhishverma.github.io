@@ -11,12 +11,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap-grid.min.css"
     integrity="sha512-2cWcZ9cbPMZFm2inlFOhwsBVbNMmNxKBtVXqL8OY9tXCZahhnIfXMxPCzpKqiHF2I2mOiNHNXEDUDglwd+4uYw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@700&display=swap"
-    rel="stylesheet" />
-    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/5e90d443bd.js" crossorigin="anonymous"></script>
 
 </head>
@@ -37,25 +35,31 @@
           Img Gallery
         </div>
         <div class="project-details">
-        <div class="title">Project-Title</div>
-        <div class="stack">Tech stack</div>
-        <div class="project-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, nemo quia ea possimus perferendis officiis quae libero placeat facere veritatis modi alias debitis soluta repudiandae sapiente eligendi deserunt quaerat aliquam!</div>
-        <div class="links"><span>link1</span><span>link2</span></div></div>
+          <div class="title">Project-Title</div>
+          <div class="stack">Tech stack</div>
+          <div class="project-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, nemo quia ea
+            possimus perferendis officiis quae libero placeat facere veritatis modi alias debitis soluta repudiandae
+            sapiente eligendi deserunt quaerat aliquam!</div>
+          <div class="links"><span>link1</span><span>link2</span></div>
+        </div>
       </div>
-      
+
     </div>
   </div>
 
   <div class="container-fluid d-flex flex-column align-items-center">
-    <nav class="" id="site-header">
-      <div class="navbar-container container">
+    <nav class="d-flex" id="site-header">
+      <div class="navbar-container container d-flex">
         <div class="logo"><a href="/">Helix.dev</a></div>
         <div id="nav-menu">
-          <input type="button" onclick="document.getElementById('intro').scrollIntoView()" value="start." />
+          <input type="button" onclick="document.getElementById('intro').scrollIntoView()" value="start."
+            class="nav-link" />
 
-          <input type="button" onclick="document.getElementById('projects').scrollIntoView()" value="work." />
+          <input type="button" onclick="document.getElementById('projects').scrollIntoView()" value="work."
+            class="nav-link" />
 
-          <input type="button" onclick="document.getElementById('about').scrollIntoView()" value="about." />
+          <input type="button" onclick="document.getElementById('about').scrollIntoView()" value="about."
+            class="nav-link" />
           <span><a href="https://github.com/adhishVerma/" target="blank_"><i class="fa-brands fa-github"></i></a></span>
         </div>
       </div>
@@ -65,20 +69,19 @@
       <div class="saluteTextContainer gradient">
         <div class="section-name"><span>a</span>start.</div>
         <p class="saluteText" id="hello">
-          Hi, my name is <span id="nickname">Helix</span>
+          Hi, my name is <span id="nickname">Adhish</span>
         </p>
         <p class="saluteText jobTitle">I'm a fullstack developer</p>
         <p class="salute-desc">I'm a full-stack developer specializing in building(and ocassionally designing)
           exceptional digital experiences. Currently, I'm focused on building responsive full-stack web applications.
         </p>
         <div class="hire-button">
-        <a href="#contact">
-          <div id="contact-link" data-value="Hire Me">Hire Me</div>
-        </a></div>
+          <a href="#contact">
+            <div id="contact-link" data-value="Hire Me">Hire Me</div>
+          </a>
+        </div>
       </div>
-      <p id="scroll-down">
-        Scroll down <i class="fa-solid fa-arrow-down"></i>
-      </p>
+
     </div>
     <!-- PROJECTS -->
     <div id="projects" class="container">
@@ -193,7 +196,7 @@
         </div>
       </div>
     </div>
-
+    <!-- CONTACT -->
     <div id="contact" class="section-container container d-flex align-items-center justify-content-center">
       <div class="contact-container">
         <div class="contact-title">Contact.</div>
@@ -203,14 +206,49 @@
           <span>v.adhish16@gmail.com</span>
         </div>
         <div id="social-icons">
-          <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+          <a href="https://www.linkedin.com/in/adhish-kumar-verma/" target="_blank">
+            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+          </a>
           <a href="https://discordapp.com/users/347337605056036867" target="_blank">
             <div class="icon"><i class="fa-brands fa-discord"></i></div>
           </a>
-          <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+          <!-- <div class="icon"><i class="fa-brands fa-x-twitter"></i></div> -->
         </div>
       </div>
     </div>
+
+    <!-- DIALOG -->
+    <dialog id="project-modal">
+      <div class="modal-header">
+        <span id="modal-title">Project Name</span>
+        <button id="modal-close" data-close-modal><i class="fa-solid fa-x"></i></button>
+      </div>
+      <div class="carousel" id="carousel">
+        <!-- carousel content -->
+        <div id="carousel-main"></div>
+        <!-- carousel control -->
+        <div id="arrow-left" class="carousel-control left">
+          <div class="arrow left"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div id="arrow-right" class="carousel-control right">
+          <div class="arrow right">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="modal-details">
+        <div id="modal-name" class="modal-name">Lorem, ipsum.</div>
+        <div id="modal-desc" class="modal-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam adipisci
+          dicta omnis consectetur ab cum reprehenderit enim veniam. Ullam, totam?</div>
+        <div class="modal-links">
+          <a id="modal-live-link" class="modal-live-link" target="_blank" href="#">Live-Preview <i
+              class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a id="modal-github-link" class="modal-github-link" target="_blank" href="#">Github <i
+              class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </dialog>
+
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
