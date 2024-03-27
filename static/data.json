@@ -1,8 +1,38 @@
-[
+[   
+    {
+        "title": "3js",
+        "link": "https://configurator-npm.vercel.app/",
+        "img": "static/images/3js/1.png",
+        "github": "https://github.com/adhishVerma/threejs-car-showcase",
+        "desc": "Immerse yourself in a dynamic car configurator app crafted with Three.js. Experience a 360-degree view, effortlessly customize colors, and explore the perfect vehicle from every angle for an interactive and engaging user experience.",
+        "tech": [
+            "ThreeJS",
+            "Javascript",
+            "GLTF"
+        ],
+        "images" : ["static/images/3js/1.png","static/images/3js/1.gif"]
+    },
+    {
+        "title": "chat2pdf",
+        "github": "https://github.com/adhishVerma/chat2pdf",
+        "link" : "https://chat2pdf.vercel.app/",
+        "img": "static/images/chat2pdf/1.png",
+        "desc": "Introducing an innovative PDF interaction application powered by AI. Seamlessly navigate through documents using text inputs, enhancing productivity and accessibility. Experience advanced features such as intelligent text recognition for swift searches. Revolutionize your PDF interactions with this cutting-edge AI-powered application, making information retreival effortless and efficient.",
+        "tech": [
+            "Next.js",
+            "LangChain",
+            "LLM",
+            "Postgres",
+            "ChatGPT",
+            "AWS"
+        ],
+        "images" : ["static/images/chat2pdf/1.png","static/images/chat2pdf/2.png", "static/images/chat2pdf/3.png", "static/images/chat2pdf/4.png", "static/images/chat2pdf/5.png","static/images/chat2pdf/6.png", "static/images/chat2pdf/7.png"]
+    },
     {
         "title": "videoco",
         "github": "https://github.com/adhishVerma/videoco",
-        "img": "https://images.unsplash.com/photo-1690722763462-2ca402aa163f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+        "link" : "https://videoco.vercel.app/",
+        "img": "static/images/videoco/4.png",
         "desc": "Elevate your virtual connections with our WebRTC-driven video calling app. Enjoy high-quality video and audio, low-latency conversations, and secure peer-to-peer communication. Whether connecting with friends, family, or colleagues, our app ensures a seamless and immersive experience that brings people together across distances.",
         "tech": [
             "React",
@@ -10,12 +40,13 @@
             "webRTC",
             "Socket.io"
         ],
-        "images" : ["https://images.unsplash.com/photo-1496144500784-f81a98b4f391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080","https://images.unsplash.com/photo-1446312299075-18fba3657228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1649605958244-73d7d5747bcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5Mzk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"]
+        "images" : ["static/images/videoco/Screenshot from 2024-03-14 23-16-12.png","static/images/videoco/Screenshot from 2024-03-14 23-16-17.png", "static/images/videoco/4.png"]
     },
     {
-        "title": "jira",
-        "link": "Project-link",
-        "img": "https://images.unsplash.com/photo-1690741745153-636872122965?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+        "title": "zoro",
+        "link": "https://bug-tracker-two-omega.vercel.app/",
+        "github" : "https://github.com/adhishVerma/issue-tracker-REST",
+        "img": "static/images/zoro/1.png",
         "desc": "Streamline project collaboration effortlessly with our MERN stack-powered project management app, inspired by Jira. Enjoy intuitive task management, real-time updates, and seamless team communication. Enhance productivity and ensure project success with our user-friendly interface, combining the power of MERN technology and Jira's proven project management concepts.",
         "tech": [
             "React",
@@ -23,63 +54,31 @@
             "mongoDB",
             "Node.js"
         ],
-        "images" : ["https://images.unsplash.com/photo-1496144500784-f81a98b4f391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080","https://images.unsplash.com/photo-1446312299075-18fba3657228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1649605958244-73d7d5747bcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5Mzk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"]
+        "images" : ["static/images/zoro/1.png"]
     },
     {
-        "title": "e-commerce",
+        "title": "ssen",
         "link": "https://ssen.vercel.app",
-        "img": "https://images.unsplash.com/photo-1691512938804-d82fd0d0dd7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
+        "github" : "https://github.com/adhishVerma/ssen",
+        "img": "static/images/ssen/1.png",
         "desc": "Enhance your online shopping with our MERN stack e-commerce app. Built with reliability and simplicity in mind, it incorporates Stripe for secure payments. Navigate effortlessly, complete transactions seamlessly, and enjoy a straightforward platform for all your needs.",
         "tech": [
             "Next.js",
             "Strapi"
         ],
-        "images" : ["https://images.unsplash.com/photo-1496144500784-f81a98b4f391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080","https://images.unsplash.com/photo-1446312299075-18fba3657228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1649605958244-73d7d5747bcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5Mzk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"]
+        "images" : ["static/images/ssen/1.png","static/images/ssen/2.png","static/images/ssen/3.png"]
     },
     {
         "title": "movie-tracker",
-        "link": "Project-link",
-        "img": "https://plus.unsplash.com/premium_photo-1673264933116-983ff2cfa989?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
+        "link": "https://fabulous-sprite-ad9755.netlify.app/",
+        "github" : "https://github.com/adhishVerma/disney-clone",
+        "img": "static/images/movie-tracker/2.png",
         "desc": "Discover the latest in cinema effortlessly with our React-based movie tracker app. Stay up-to-date with new releases and manage your watchlist seamlessly. Powered by Google Firebase, it ensures real-time updates and a user-friendly experience for an unparalleled movie-watching journey.",
         "tech": [
             "React",
             "Firebase"
         ],
-        "images" : ["https://images.unsplash.com/photo-1496144500784-f81a98b4f391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080","https://images.unsplash.com/photo-1446312299075-18fba3657228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1649605958244-73d7d5747bcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5Mzk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"]
-    },
-    {
-        "title": "social-media",
-        "link": "Project-link",
-        "img": "https://images.unsplash.com/photo-1690741818722-3f96fc94f678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        "desc": ""
-    },
-    {
-        "title": "3js",
-        "link": "https://unique-hummingbird-52002c.netlify.app/",
-        "img": "https://images.unsplash.com/photo-1690701719276-ce07c66e200d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80",
-        "github": "https://github.com/adhishVerma/threejs-car-showcase",
-        "desc": "Immerse yourself in a dynamic car configurator app crafted with Three.js. Experience a 360-degree view, effortlessly customize colors, and explore the perfect vehicle from every angle for an interactive and engaging user experience.",
-        "tech": [
-            "ThreeJS",
-            "Javascript"
-        ],
-        "images" : ["https://images.unsplash.com/photo-1496144500784-f81a98b4f391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080","https://images.unsplash.com/photo-1446312299075-18fba3657228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1649605958244-73d7d5747bcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5Mzk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"]
-    },
-    {
-        "title": "multiplayer-game",
-        "link": "Project-link",
-        "img": "https://images.unsplash.com/photo-1690759506486-cee7ad7832c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-    },
-    {
-        "title": "google docs",
-        "link": "Project-link",
-        "img": "https://images.unsplash.com/photo-1690763367559-d63c891dc409?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80",
-        "desc": "",
-        "tech": [
-            "React",
-            "Express",
-            "Socket.io"
-        ],
-        "images" : ["https://images.unsplash.com/photo-1496144500784-f81a98b4f391?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080","https://images.unsplash.com/photo-1446312299075-18fba3657228?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5NDI&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080", "https://images.unsplash.com/photo-1617293134227-0ec282f3ed89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE3MTAwNzY5Mzk&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"]
-    }
+        "images" : ["static/images/movie-tracker/1.png","static/images/movie-tracker/2.png","static/images/movie-tracker/3.png"]
+    }   
+    
 ]

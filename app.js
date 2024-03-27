@@ -6,6 +6,7 @@ const projectModal = document.querySelector('#project-modal');
 const closeButton = document.querySelector('[data-close-modal]');
 const modalName = document.querySelector("#modal-name");
 const modalDesc = document.querySelector("#modal-desc");
+const modalTechStack = document.querySelector('#modal-tech-stack');
 const carousel = document.querySelector('#carousel-main');
 const leftArrow = document.getElementById('arrow-left');
 const rightArrow = document.getElementById('arrow-right');
@@ -26,6 +27,13 @@ function populateAndShowModal(event) {
   const { index } = event.target.dataset;
   const project = projectsArr[index];
 
+  const techStack = project.tech
+  techStack.forEach((item) => {
+    const listItem = document.createElement('li')
+    listItem.innerHTML = item
+    modalTechStack.appendChild(listItem);
+  })
+
   // populate the modal
   modalTitle.innerText = project.title;
   modalLink.setAttribute('href', project.link);
@@ -43,6 +51,9 @@ function populateAndShowModal(event) {
     carousel.appendChild(img);
     slides.push(img);
   })
+
+
+
   // show the dialog
   showSlide(0);
   projectModal.showModal();
@@ -63,6 +74,7 @@ rightArrow.addEventListener('click', function () {
 // modal close.
 closeButton.addEventListener('click', function (event) {
   carousel.innerHTML = ""
+  modalTechStack.innerHTML = ""
   index = 0
   slides = []
   projectModal.close();
