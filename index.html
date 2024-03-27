@@ -50,7 +50,10 @@
   <div class="container-fluid d-flex flex-column align-items-center">
     <nav class="d-flex" id="site-header">
       <div class="navbar-container container d-flex">
-        <div class="logo"><a href="/">Helix.dev</a></div>
+        <div class="logo"><a href="/">
+          <img class="logo-img" src="static/icons/H.svg" alt="logo"/>
+          <span>elix</span>
+        </a></div>
         <div id="nav-menu">
           <input type="button" onclick="document.getElementById('intro').scrollIntoView()" value="start."
             class="nav-link" />
@@ -103,7 +106,7 @@
             <div data-tab="skills">Skills</div>
           </li>
           <li>
-            <div data-tab="profile">Profile</div>
+            <div data-tab="profile">About</div>
           </li>
           <li>
             <div data-tab="work-history">Work history</div>
@@ -219,6 +222,7 @@
 
     <!-- DIALOG -->
     <dialog id="project-modal">
+      <div class="modal-container">
       <div class="modal-header">
         <span id="modal-title">Project Name</span>
         <button id="modal-close" data-close-modal><i class="fa-solid fa-x"></i></button>
@@ -238,6 +242,8 @@
       </div>
       <div class="modal-details">
         <div id="modal-name" class="modal-name">Lorem, ipsum.</div>
+        <ul id="modal-tech-stack">
+        </ul>
         <div id="modal-desc" class="modal-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam adipisci
           dicta omnis consectetur ab cum reprehenderit enim veniam. Ullam, totam?</div>
         <div class="modal-links">
@@ -247,6 +253,7 @@
               class="fa-brands fa-github"></i></a>
         </div>
       </div>
+    </div>
     </dialog>
 
   </div>
